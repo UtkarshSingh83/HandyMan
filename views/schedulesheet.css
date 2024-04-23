@@ -45,6 +45,7 @@
     height: 2.5rem;
     width: 10rem;
     letter-spacing: 1.5px;
+    text-decoration: none;
 }
 .form-group{
     padding: 5px;
