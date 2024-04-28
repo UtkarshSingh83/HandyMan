@@ -2,38 +2,29 @@
 @import url('https://fonts.cdnfonts.com/css/myriad-pro');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+.outter{
+    background-color: rgb(228, 228, 228);
+}
 .headDIV{
+    background: linear-gradient(to left, #00236d, #004182); 
     font-family: "Bebas Neue", sans-serif;
-    /* background-color: white;  */
+    letter-spacing: 2px;
     font-size: 50px;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     color:black;
+    margin-bottom: 50px;
 }
-.scheduleoutDIV{
-    background-color: rgb(228, 228, 228);
-    height:700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feedfont{
+    color:white;
 }
-.scheduleform{
+.reviewform{
     font-family: "Roboto Condensed", sans-serif;
-    background: linear-gradient(to left, #00236d, #004182); 
+    font-size: 20px;
     width: 700px;
-    padding: 50px;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    border-radius: 10px;
-}
-.scheduleform{
-    box-shadow: 10px 15px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.fontSize{
-    font-size: 25px;
-    color: white;
+    margin-bottom: 50px;
 }
 .buttonDIV{
     font-family: "Bebas Neue", sans-serif;
@@ -41,10 +32,12 @@
     justify-content: center;
     padding-top: 30px;
 }
-.ButtForm{
+.Buttreview{
     height: 2.5rem;
     width: 10rem;
     letter-spacing: 1.5px;
+}
+.Butt{
     text-decoration: none;
 }
 .form-group{

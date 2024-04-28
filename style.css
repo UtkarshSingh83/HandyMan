@@ -254,7 +254,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
-.estimate{
+/* .estimate{
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
@@ -274,7 +274,7 @@ nav{
     width:20rem;
     margin: 4px 2px;
     cursor: pointer;
-}
+} */
 .our-services-anchor{
     color: white;
     text-decoration: none;
@@ -312,10 +312,37 @@ nav{
 .testimonials{
     background-color: rgb(170, 167, 167);
     color: rgb(0, 0, 0);
-    height: 60vh;
+    height: 75vh;
 }
 .testimo1{
     margin-bottom: 100px;
+}
+#carouselExampleSlidesOnly{
+    padding-bottom: 100px;
+}
+.estimateButton{
+    padding-top:30px ;
+}
+.estimate{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estiButt:hover{
+    transform:scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.estiButt{
+    border: none;
+    background-color: rgb(41, 120, 240);
+    color: white;
+    padding: 20px 10px;
+    width:15rem;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
   /* footer section */
@@ -323,6 +350,7 @@ nav{
 footer{
     height: auto;
     background-color: black;
+    margin-top: 0px;
 }
 .heading-lines{
     text-decoration: underline;
@@ -354,4 +382,5 @@ footer{
     display: flex;
     align-items: flex-end !important;
     position: relative;
+    color: white;
 }
