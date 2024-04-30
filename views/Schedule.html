@@ -18,26 +18,26 @@
     <header class="primary-header container-fluid">
 
         <div class="logo">
-            <img src="./assets/logos/base-DefaultLogo-100px.png" width="200px" alt="Handyman">
+            <img src="./imgs/base-DefaultLogo-100px.png" width="200px" alt="Handyman">
         </div>
         <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span
                 class="sr-only"></span></button>
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active">
-                    <a href="./index.html" class="nav-anchors"><span aria-hidden="true">Home</span></a>
+                    <a href="/index.html" class="nav-anchors"><span aria-hidden="true">Home</span></a>
                 </li>
                 <li class="active">
-                    <a href="./index.html" class="nav-anchors"><span aria-hidden="true">Services</span></a>
+                    <a href="/index.html" class="nav-anchors"><span aria-hidden="true">Services</span></a>
                 </li>
                 <li class="active">
-                    <a href="./joinUS.html" class="nav-anchors"><span aria-hidden="true">Join Us</span></a>
+                    <a href="/joinUS.html" class="nav-anchors"><span aria-hidden="true">Join Us</span></a>
                 </li>
                 <li class="active">
-                    <a href="./aboutUs.html" class="nav-anchors"><span aria-hidden="true">About us</span></a>
+                    <a href="/aboutUs.html" class="nav-anchors"><span aria-hidden="true">About us</span></a>
                 </li>
                 <li class="active">
-                    <a href="./index.html" class="nav-anchors"><span aria-hidden="true">Contact us</span></a>
+                    <a href="/index.html" class="nav-anchors"><span aria-hidden="true">Contact us</span></a>
                 </li>
             </ul>
         </nav>
@@ -111,11 +111,7 @@
                     <textarea class="form-control" id="project" rows="3"></textarea>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 buttonDIV">
-                    <button class="btn btn-dark ButtForm" onclick="showMessage()">
-                        <a href="/index.html" class="ButtForm">
-                            SUBMIT
-                        </a>
-                    </button>
+                    <button class="btn btn-dark ButtForm">SUBMIT</button>
                 </div>
             </form>
         </div>
@@ -130,55 +126,22 @@
 
     <script>
         function validateForm() {
-            var form = document.getElementById('appointmentForm');
-            var isValid = true;
+            var service = document.getElementById('service').value;
+            var city = document.getElementById('city').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+            var phone = document.getElementById('phone').value;
 
-            var serviceSelect = document.getElementById('service');
-            if (serviceSelect.value === 'select') {
-                serviceSelect.classList.add('is-invalid');
-                isValid = false;
+            if (service === 'select' || city === 'select' || date === '' || time === '' || phone === '') {
+                alert('Please fill out all required fields.');
+                return false;
             } else {
-                serviceSelect.classList.remove('is-invalid');
+                alert('You have successfully scheduled HandyMan service.\nYou will be contacted soon by our HandyMan through Whatsapp and Gmail.');
+                window.location.href = '/index.html'; 
+                return false; 
             }
-
-            var citySelect = document.getElementById('city');
-            if (citySelect.value === 'select') {
-                citySelect.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                citySelect.classList.remove('is-invalid');
-            }
-
-            var dateInput = document.getElementById('date');
-            if (!dateInput.value) {
-                dateInput.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                dateInput.classList.remove('is-invalid');
-            }
-
-            var timeInput = document.getElementById('time');
-            if (!timeInput.value) {
-                timeInput.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                timeInput.classList.remove('is-invalid');
-            }
-
-            var phoneInput = document.getElementById('phone');
-            if (!phoneInput.value) {
-                phoneInput.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                phoneInput.classList.remove('is-invalid');
-            }
-
-            return isValid;
-
         }
-        function showMessage() {
-            alert("You have successfully scheduled HandyMan service.\nYou will be contacted soon by our HandyMan through Whatsapp and Gmail.");
-        }
+        
     </script>
     <script>
         AOS.init();

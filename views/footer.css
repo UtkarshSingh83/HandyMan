@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.roboto-condensed-google{
+/* .roboto-condensed-google{
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -21,7 +21,7 @@ footer{
 }
 .heading-lines{
     /* color: white; */
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: rgb(41, 120, 240);
 }
 .telephone{
@@ -50,4 +50,42 @@ footer{
     display: flex;
     align-items: flex-end !important;
     position: relative;
+} */ 
+
+footer{
+    height: auto;
+    background-color: black;
+    margin-top: 0px;
+}
+.heading-lines{
+    text-decoration: underline;
+    text-decoration-color: rgb(41, 120, 240);
+}
+.telephone{
+    color: white;
+    text-decoration: none;
+}
+.carrerButton{
+    color: white;
+    background-color: transparent;
+    border: solid white 1px;
+    width: 10rem;
+    padding: 6px;
+    font-weight: 100;
+}
+.footer-anchor{
+    text-decoration: none;
+    color: white;
+}
+.footer-anchor:hover{
+    text-decoration: underline;
+}
+.serve-cities-list li{
+    list-style-image: url(./assets/icons/geo-alt-fill.svg);
+}
+.copyright{
+    display: flex;
+    align-items: flex-end !important;
+    position: relative;
+    color: white;
 }

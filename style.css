@@ -384,3 +384,43 @@ footer{
     position: relative;
     color: white;
 }
+
+/* Feedback Form */
+
+.feedfont{
+    color:white;
+}
+.reviewform{
+    background: linear-gradient(to left, #00236d, #004182);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+.buttonDIV{
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.Buttreview{
+    height: 2.5rem;
+    width: 10rem;
+    letter-spacing: 1.5px;
+}
+.Butt{
+    text-decoration: none;
+}
+.form-group{
+    padding: 5px;
+}
+.modal-body{
+    padding: 0 !important;
+}
+.modal-content {
+    background: linear-gradient(to left, #00236d, #004182);
+
+    width: 80%;
+    border-radius: 15px !important;
+}
